@@ -270,7 +270,7 @@ app.post('/webhook/', (req, res) => {
                         if (event.message && !event.message.is_echo ||
                             event.postback && event.postback.payload) {
                             processEvent(event);
-                            sendGenericMessage(sender);
+                            //sendGenericMessage(sender);
                         }
                     });
                 }
