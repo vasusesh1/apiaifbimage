@@ -270,11 +270,11 @@ app.post('/webhook/', (req, res) => {
                         if (event.message && !event.message.is_echo ||
                             event.postback && event.postback.payload) {
                             processEvent(event);
-                            if (text === 'Generic') {
-                            sendGenericMessage(sender)
-                            continue
-                            }
-                            sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
+                            //if (text === 'Generic') {
+                            //sendGenericMessage(sender)
+                            //continue
+                        
+                            //sendTextMessage(sender, "Text received, echo: " + text.substring(0, 200))
                         }
                     });
                 }
